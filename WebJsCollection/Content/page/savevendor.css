@@ -1,0 +1,156 @@
+.left {
+    padding-top: 30px;
+    color: #e41e35;
+    font-size: 12px;
+    width: 230px;
+    height: 1000px;
+    background-image: url(../images/leftnav.png);
+    float: left;
+}
+
+.vendorsection1 {
+    width: 900px;
+    height: 145px;
+    margin: 20px;
+}
+
+.vendorsection_title {
+    width: 222px;
+    height: 34px;
+    margin-left: 50px;
+    background: url(../images/tagfront.png) -8px 0px no-repeat;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    color: white;
+}
+
+.vendorsection1_content {
+    width: 860px;
+    height: 65px;
+    padding: 20px;
+    margin-left: 20px;
+    border: #d0c09d 2px solid;
+    border-top: #e6352f 4px solid;
+    background: #fafaf3;
+    color: #666666;
+}
+
+.savevendorlbl {
+    width: 140px;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+}
+
+.savevendorinput {
+    width: 260px;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+}
+
+.savevendorinput1 {
+    width: 130px;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+}
+
+.savevendorinput input {
+    border: #d0c09d 1px solid;
+    width: 160px;
+}
+
+.savevendorinput select {
+    border: #d0c09d 1px solid;
+    width: 160px;
+}
+
+.vendorsection2 {
+    width: 900px;
+    height: 800px;
+    margin: 20px;
+}
+
+.vendorsection2_content {
+    width: 860px;
+    height: 700px;
+    padding: 20px;
+    margin-left: 20px;
+    border: #d0c09d 2px solid;
+    border-top: #e6352f 4px solid;
+    background: #fafaf3;
+    color: #666666;
+}
+
+.vendorsection3 {
+    width: 900px;
+    height: 145px;
+    margin: 20px;
+}
+
+.vendorsection3_content {
+    width: 860px;
+    height: 65px;
+    padding: 20px;
+    margin-left: 20px;
+    border: #d0c09d 2px solid;
+    border-top: #e6352f 4px solid;
+    background: #fafaf3;
+    color: #666666;
+}
+
+.vendorsection4 {
+    width: 900px;
+    height: 310px;
+    margin: 20px;
+}
+
+.vendorsection4_content {
+    width: 860px;
+    height: 270px;
+    padding: 20px;
+    margin-left: 20px;
+    border: #d0c09d 2px solid;
+    border-top: #e6352f 4px solid;
+    background: #fafaf3;
+    color: #666666;
+}
+
+.vendorsection5_content {
+    width: 860px;
+    height: 180px;
+    padding: 20px;
+    margin-left: 20px;
+    border: #d0c09d 2px solid;
+    border-top: #e6352f 4px solid;
+    background: #fafaf3;
+    color: #666666;
+}
+
+.vendorsection6_content {
+    width: 860px;
+    height: 100px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.savebtn {
+    width: 120px;
+    height: 30px;
+    margin-left: 400px;
+    margin-top: 20px;
+    border: 0px;
+    background: url(../images/save.jpg);
+    cursor: pointer;
+}
+
+.savebtn1 {
+    width: 120px;
+    height: 30px;
+    margin-left: 400px;
+    margin-top: 20px;
+    border: 0px;
+    cursor: pointer;
+}

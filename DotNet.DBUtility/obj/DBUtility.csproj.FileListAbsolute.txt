@@ -1,0 +1,6 @@
+D:\yubin\XHFH\DBUtility\bin\Debug\XHFH.DBUtility.dll
+D:\yubin\XHFH\DBUtility\bin\Debug\XHFH.DBUtility.pdb
+D:\yubin\XHFH\DBUtility\bin\Debug\MySql.Data.dll
+D:\yubin\XHFH\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\yubin\XHFH\DBUtility\obj\Debug\XHFH.DBUtility.dll
+D:\yubin\XHFH\DBUtility\obj\Debug\XHFH.DBUtility.pdb

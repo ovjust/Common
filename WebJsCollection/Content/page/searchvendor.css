@@ -1,0 +1,117 @@
+.left {
+    padding-top: 30px;
+    color: #e41e35;
+    font-size: 12px;
+    width: 230px;
+    height: 900px;
+    background-image: url(../images/leftnav.png);
+    float: left;
+}
+
+.searchbox {
+    height: 120px;
+    margin: 20px;
+    width: 1000px;
+    border: #d0c09d 2px solid;
+    background: #fafaf3;
+    color: #666666;
+}
+
+.searchinfo {
+    height: 90px;
+    width: 800px;
+    padding: 20px;
+    line-height: 30px;
+    float: left;
+}
+
+.searchinfolbl {
+    width: 140px;
+    height: 30px;
+    float: left;
+}
+
+.searchinfoinputbox1 {
+    width: 300px;
+    height: 30px;
+    float: left;
+}
+
+.searchinfoinputbox2 {
+    width: 200px;
+    height: 30px;
+    float: left;
+}
+
+.searchinfoinputbox1 input { border: #d0c09d 1px solid; }
+
+.searchinfoinputbox2 input { border: #d0c09d 1px solid; }
+
+.searchinfoinputbox3 {
+    width: 500px;
+    height: 30px;
+    float: left;
+}
+
+.searchinfoinputbox3 input { border: #d0c09d 1px solid; }
+
+.inputdate { width: 110px; }
+
+.searchbtn {
+    width: 60px;
+    height: 26px;
+    border: 0px;
+    margin-left: 10px;
+    margin-top: 40px;
+    background: url(../images/search.jpg) no-repeat;
+    float: left;
+    cursor: pointer;
+}
+
+.searchlist_title {
+    padding-left: 10px;
+    height: 36px;
+    width: 990px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: #d0c09d 2px solid;
+    background: url(../images/maintitle.png) repeat;
+    color: #666666;
+    line-height: 36px;
+}
+
+.searchlist {
+    height: 600px;
+    width: 1000px;
+    margin-left: 20px;
+    border: #d0c09d 2px solid;
+    border-top: 0px;
+    background: #fafaf3;
+    color: #666666;
+}
+
+.chkalllbl { padding-left: 10px; }
+
+.btn {
+    background: 0px -10px url(../images/maintitle.png) repeat;
+    border: 0px;
+    cursor: pointer;
+    line-height: 23px;
+}
+
+table.searchTable {
+    width: 100%;
+    color: #333333;
+    border-collapse: collapse;
+}
+
+table.searchTable th {
+    padding: 1px;
+    color: #fff;
+    background-color: #002060;
+}
+
+table.searchTable td {
+    padding: 1px;
+    background-color: #ffffff;
+}

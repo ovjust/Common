@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DBUtility">
+</Property><Property Name="解决方案文件" Value="E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\DBUtility.sln">
+</Property><Property Name="Date" Value="2013年1月27日星期日">
+</Property><Property Name="Time" Value="13:30:37">
+</Property></Properties><Event ErrorLevel="0" Project="DBUtility" Source="DBUtility.csproj" Description="项目文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\DBUtility.csproj">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="DBUtility.csproj.user" Description="项目用户文件成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\DBUtility.csproj.user">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="AssemblyInfo.cs" Description="文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="CommandInfo.cs" Description="文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\CommandInfo.cs">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="DbHelperMySQL.cs" Description="文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\DbHelperMySQL.cs">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="DbHelperOleDb.cs" Description="文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\DbHelperOleDb.cs">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="DbHelperOra.cs" Description="文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\DbHelperOra.cs">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="DbHelperSQL.cs" Description="文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\DbHelperSQL.cs">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="DESEncrypt.cs" Description="文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\DESEncrypt.cs">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="OracleHelper.cs" Description="文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\OracleHelper.cs">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="PubConstant.cs" Description="文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\PubConstant.cs">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="SQLHelper.cs" Description="文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\SQLHelper.cs">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="DbHelperSQLP.cs" Description="文件已成功备份为 E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\Backup\DbHelperSQLP.cs">
+</Event><Event ErrorLevel="1" Project="DBUtility" Source="DBUtility.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="DBUtility.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DBUtility" Source="DBUtility.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DBUtility" Source="DBUtility.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

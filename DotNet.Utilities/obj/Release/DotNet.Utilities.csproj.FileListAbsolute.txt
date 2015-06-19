@@ -1,0 +1,12 @@
+E:\测试项目\拼车\DotNet.Utilities\bin\Release\DotNet_Utilities.dll
+E:\测试项目\拼车\DotNet.Utilities\bin\Release\DotNet_Utilities.pdb
+E:\测试项目\拼车\DotNet.Utilities\bin\Release\Excel.dll
+E:\测试项目\拼车\DotNet.Utilities\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\测试项目\拼车\DotNet.Utilities\bin\Release\itextsharp.dll
+E:\测试项目\拼车\DotNet.Utilities\bin\Release\Newtonsoft.Json.dll
+E:\测试项目\拼车\DotNet.Utilities\bin\Release\OWC10Chart.dll
+E:\测试项目\拼车\DotNet.Utilities\bin\Release\office.dll
+E:\测试项目\拼车\DotNet.Utilities\bin\Release\Microsoft.Vbe.Interop.dll
+E:\测试项目\拼车\DotNet.Utilities\obj\Release\DotNet.Utilities.csprojResolveAssemblyReference.cache
+E:\测试项目\拼车\DotNet.Utilities\obj\Release\DotNet_Utilities.dll
+E:\测试项目\拼车\DotNet.Utilities\obj\Release\DotNet_Utilities.pdb

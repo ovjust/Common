@@ -1,0 +1,24 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+    min-width: 1280px;
+}
+
+.fullBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#maincontent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+input, button, select, textarea { outline: none; }

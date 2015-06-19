@@ -1,0 +1,10 @@
+D:\Project\TransmissionPassage\WebService\TransmissionPassageWebService\DBUtility\bin\Debug\XHFH.DBUtility.dll
+D:\Project\TransmissionPassage\WebService\TransmissionPassageWebService\DBUtility\bin\Debug\XHFH.DBUtility.pdb
+D:\Project\TransmissionPassage\WebService\TransmissionPassageWebService\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\TransmissionPassage\WebService\TransmissionPassageWebService\DBUtility\obj\Debug\XHFH.DBUtility.dll
+D:\Project\TransmissionPassage\WebService\TransmissionPassageWebService\DBUtility\obj\Debug\XHFH.DBUtility.pdb
+E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\bin\Debug\XHFH.DBUtility.dll
+E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\bin\Debug\XHFH.DBUtility.pdb
+E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\obj\Debug\XHFH.DBUtility.dll
+E:\@网盘\我的酷盘\@我的程序\@DotNet.Utilities通用类代码\DBUtility\obj\Debug\XHFH.DBUtility.pdb

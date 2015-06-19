@@ -1,0 +1,15 @@
+bin\Debug\LTP.Common.dll
+bin\Debug\LTP.Common.pdb
+bin\Debug\DanShen.BLL.dll
+bin\Debug\DanShen.DAL.dll
+bin\Debug\DanShen.DBUtility.dll
+bin\Debug\DanShen.Model.dll
+bin\Debug\Maticsoft.Common.dll
+bin\Debug\MySql.Data.dll
+bin\Debug\DanShen.DBUtility.pdb
+bin\Debug\DanShen.DAL.pdb
+bin\Debug\DanShen.Model.pdb
+bin\Debug\DanShen.BLL.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\LTP.Common.dll
+obj\Debug\LTP.Common.pdb

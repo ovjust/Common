@@ -1,0 +1,5 @@
+E:\测试项目\BaiduApi\WebJsCollection\bin\WebJsCollection.dll
+E:\测试项目\BaiduApi\WebJsCollection\bin\WebJsCollection.pdb
+E:\测试项目\BaiduApi\WebJsCollection\obj\Debug\Ovjust.JsCollection.csprojResolveAssemblyReference.cache
+E:\测试项目\BaiduApi\WebJsCollection\obj\Debug\WebJsCollection.dll
+E:\测试项目\BaiduApi\WebJsCollection\obj\Debug\WebJsCollection.pdb
