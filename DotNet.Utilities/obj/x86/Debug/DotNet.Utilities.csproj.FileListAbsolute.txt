@@ -14,6 +14,9 @@ E:\测试项目\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\ICSharpCode.SharpZi
 E:\测试项目\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\itextsharp.dll
 E:\测试项目\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\Newtonsoft.Json.dll
 E:\测试项目\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\OWC10Chart.dll
-E:\测试项目\Ovjust_Common\DotNet.Utilities\obj\x86\Debug\DotNet.Utilities.csprojResolveAssemblyReference.cache
 E:\测试项目\Ovjust_Common\DotNet.Utilities\obj\x86\Debug\DotNet_Utilities.dll
 E:\测试项目\Ovjust_Common\DotNet.Utilities\obj\x86\Debug\DotNet_Utilities.pdb
+E:\测试项目\Ovjust_Common\DotNet.Utilities\obj\x86\Debug\DotNet.Utilities.csprojResolveAssemblyReference.cache
+I:\my_program_middle\Ovjust_Common\DotNet.Utilities\obj\x86\Debug\DotNet.Utilities.csprojResolveAssemblyReference.cache
+I:\my_program_middle\Ovjust_Common\DotNet.Utilities\obj\x86\Debug\DotNet_Utilities.dll
+I:\my_program_middle\Ovjust_Common\DotNet.Utilities\obj\x86\Debug\DotNet_Utilities.pdb

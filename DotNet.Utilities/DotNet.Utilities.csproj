@@ -57,8 +57,11 @@
     <Compile Include="图形图片\ImageIO.cs" />
     <Compile Include="图形图片\图片\ImageToString.cs" />
     <Compile Include="序列化\Json\NewtonJson.cs" />
+    <Compile Include="文件相关\启动程序进程\ServiceInstall.cs" />
+    <Compile Include="文件相关\配置文件操作类\CustomConfigHelper.cs" />
     <Compile Include="网络\Chart图形\Assistant.cs" />
     <Compile Include="语言字符时间计算\Chinese2Unicode.cs" />
+    <Compile Include="语言字符时间计算\EnumHelper.cs" />
     <Compile Include="语言字符时间计算\字符串\StringExtensions.cs" />
     <Compile Include="页面辅助类\BindDataControl.cs" />
     <Compile Include="网络\Chart图形\OWCChart11.cs" />

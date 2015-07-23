@@ -10,6 +10,16 @@ namespace DotNet_Utilities
     /// </summary>    
     public static class SysHelper
     {
+        public static string ExeStartPath()
+        {
+            return System.AppDomain.CurrentDomain.BaseDirectory;
+        }
+
+        public static string CurrentWorkingPath()
+        {
+            return System.Environment.CurrentDirectory;
+        }
+
         #region 获取文件相对路径映射的物理路径
         /// <summary>
         /// 获取文件相对路径映射的物理路径
@@ -23,7 +33,7 @@ namespace DotNet_Utilities
         }
         #endregion
 
-       
+
 
         #region 获取指定调用层级的方法名
         /// <summary>

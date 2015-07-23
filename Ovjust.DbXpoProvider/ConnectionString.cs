@@ -1,6 +1,7 @@
 ﻿using DevExpress.Xpo.DB;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 
@@ -8,73 +9,130 @@ namespace Ovjust.DbXpoProvider
 {
     public class ConnectionString
     {
-        string dbServer;
 
+        bool? isOpenShift;
+        public bool IsOpenShift
+        {
+            get
+            {
+                if (isOpenShift == null)
+                    isOpenShift = ConfigurationManager.AppSettings["isOpenShift"] == "true";
+                return isOpenShift.Value;
+            }
+        }
+        string dbServer;
         public string DbServer
         {
-            get {
+            get
+            {
                 if (dbServer == null)
                 {
-                    dbServer= Environment.GetEnvironmentVariable("OPENSHIFT_MYSQL_DB_HOST");
-                
+                    if (IsOpenShift)
+                    {
+                        if (DbType == EDbType.MySql)
+                            dbServer = Environment.GetEnvironmentVariable("OPENSHIFT_MYSQL_DB_HOST");
+                    }
+                    else
+                        dbServer = ConfigurationManager.AppSettings["dbServer"];
+                    if (dbType == EDbType.MsSql)
+                    {
+                        if (!string.IsNullOrEmpty(DbPort))
+                            dbServer += "," + DbPort;
+                    }
                 }
-                return dbServer; }
+                return dbServer;
+            }
         }
         string dbUser;
 
         public string DbUser
         {
-            get { return dbUser; }
+            get
+            {
+                if (dbUser == null)
+                {
+                    dbUser = ConfigurationManager.AppSettings["dbUser"];
+                }
+                return dbUser;
+            }
         }
         string dbPwd;
 
         public string DbPwd
         {
-            get { return dbPwd; }
+            get
+            {
+                if (dbPwd == null)
+                {
+                    dbPwd = ConfigurationManager.AppSettings["dbPwd"];
+                }
+                return dbPwd;
+            }
         }
 
         string dbName;
 
         public string DbName
         {
-            get { return dbName; }
+            get
+            {
+                if (dbName == null)
+                {
+                    dbName = ConfigurationManager.AppSettings["dbName"];
+                }
+                return dbName;
+            }
         }
 
-        string mysqlPort;
-        public string MysqlPort
+        string dbPort;
+        public string DbPort
         {
-            get {
-                if(mysqlPort==null)
-                    mysqlPort = Environment.GetEnvironmentVariable("OPENSHIFT_MYSQL_DB_PORT"); 
-                return mysqlPort; }
+            get
+            {
+                if (dbPort == null)
+                {
+                    if (IsOpenShift)
+                    {
+                        if (DbType == EDbType.MySql)
+                            dbPort = Environment.GetEnvironmentVariable("OPENSHIFT_MYSQL_DB_PORT");
+                    }
+                    else
+                        dbPort = ConfigurationManager.AppSettings["dbPort"];
+                }
+                return dbPort;
+            }
         }
-        EDbType eDbType = EDbType.MySql;
+        EDbType dbType;
 
-        public EDbType EDbType
+        public EDbType DbType
         {
-            get { return eDbType; }
+            get
+            {
+                if (dbType == EDbType.None)
+                    dbType = (EDbType)Enum.Parse(typeof(EDbType), ConfigurationManager.AppSettings["dbType"]);
+                return dbType;
+            }
         }
         public static string GetString()
         {
-            string str = null;
+            string strConn = null;
             var connObj = new ConnectionString();
 
-            switch (connObj.EDbType)
+            switch (connObj.DbType)
             {
                 case EDbType.MySql:
-                    str = MySqlConnectionProvider.GetConnectionString(connObj.dbServer, connObj.dbUser, connObj.dbPwd, connObj.dbName);
-                    if (!string.IsNullOrEmpty(connObj.MysqlPort) && connObj.MysqlPort != "3306")
-                        str += string.Format("port={0};", connObj.MysqlPort);
+                    strConn = MySqlConnectionProvider.GetConnectionString(connObj.DbServer, connObj.DbUser, connObj.DbPwd, connObj.DbName);
+                    if (!string.IsNullOrEmpty(connObj.DbPort) && connObj.DbPort != "3306")
+                        strConn += string.Format("port={0};", connObj.DbPort);
                     break;
 
                 case EDbType.MsSql:
-                    str = MSSqlConnectionProvider.GetConnectionString(connObj.dbServer, connObj.dbUser, connObj.dbPwd, connObj.dbName);
-                    str += string.Format("port={0};", connObj.MysqlPort);
+                    strConn = MSSqlConnectionProvider.GetConnectionString(connObj.dbServer, connObj.dbUser, connObj.dbPwd, connObj.dbName);
                     break;
             }
-            return str;
+            return strConn;
         }
     }
 
-    public enum EDbType { MsSql, MySql, Access }
+    public enum EDbType { None, MsSql, MySql, Access }
 }

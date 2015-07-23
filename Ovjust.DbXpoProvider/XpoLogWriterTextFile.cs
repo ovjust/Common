@@ -11,18 +11,24 @@ namespace Ovjust.DbXpoProvider
     {
         string fileName = "log.txt";
         FileStream fs;
+        StreamWriter sw;
         public XpoLogWriterTextFile()
         {
+            fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
              fs=  File.Open(fileName, FileMode.OpenOrCreate,FileAccess.ReadWrite);
-            File
+             sw = new StreamWriter(fs);
         }
         public override void Write(string message)
         {
-           fs.w
+            sw.Write(message); 
+            sw.Flush();
+            sw.Close();
         }
         public override void WriteLine(string message)
         {
-            outputWindow.AppendText(message + "\r\n");
+            sw.WriteLine(message);
+            sw.Flush();
+            sw.Close();
         }
     }
 }
