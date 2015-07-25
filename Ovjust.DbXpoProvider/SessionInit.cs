@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Ovjust.DbXpoProvider
 {
-    public class SessionInit
+    public class XpoHelper
     {
         public static void Init()
         {

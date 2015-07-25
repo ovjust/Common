@@ -19,7 +19,9 @@ namespace Ovjust.UnitTest
             //al = list;
 
             Hashtable hs = new Hashtable();
-          
+            hs.Add(1, 1);
+            hs.Add(1, 1);
+            
         }
     }
 }
