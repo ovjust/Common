@@ -127,7 +127,7 @@ namespace Ovjust.DbXpoProvider
                     break;
 
                 case EDbType.MsSql:
-                    strConn = MSSqlConnectionProvider.GetConnectionString(connObj.dbServer, connObj.dbUser, connObj.dbPwd, connObj.dbName);
+                    strConn = MSSqlConnectionProvider.GetConnectionString(connObj.DbServer, connObj.DbUser, connObj.DbPwd, connObj.DbName);
                     break;
             }
             return strConn;

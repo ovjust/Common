@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D7B7E44-C6C2-43B6-A4C9-88258C1B64FB}</ProjectGuid>
+    <ProjectGuid>{8A1A484D-8004-40C5-90F5-40F5E3314DDB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ovjust.UnitTest</RootNamespace>
-    <AssemblyName>Ovjust.UnitTest</AssemblyName>
+    <RootNamespace>Ovjust.UnitTestXpo93</RootNamespace>
+    <AssemblyName>Ovjust.UnitTestXpo93</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -53,14 +53,25 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v12.1">
-      <HintPath>..\AFiles\dlls\DevExpress.Data.v12.1.dll</HintPath>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AFiles\dlls\dev9.3\DevExpress.Data.v9.3.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.1">
-      <HintPath>..\AFiles\dlls\DevExpress.Xpo.v12.1.dll</HintPath>
+    <Reference Include="DevExpress.Data.v9.3.Linq, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AFiles\dlls\dev9.3\DevExpress.Data.v9.3.Linq.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.1.Extensions">
-      <HintPath>..\AFiles\dlls\DevExpress.Xpo.v12.1.Extensions.dll</HintPath>
+    <Reference Include="DevExpress.Xpo.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AFiles\dlls\dev9.3\DevExpress.Xpo.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v9.3.Linq, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AFiles\dlls\dev9.3\DevExpress.Xpo.v9.3.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v9.3.Providers, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AFiles\dlls\dev9.3\DevExpress.Xpo.v9.3.Providers.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -80,26 +91,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ArrayTest.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GuidTest.cs" />
-    <Compile Include="SafeThreadTest.cs" />
     <Compile Include="XPO\Model.cs" />
     <Compile Include="XPO\XpoCollectTest.cs" />
-    <Compile Include="UnitTest2.cs" />
-    <Compile Include="VirturlOverwriteNew\ClassA.cs" />
-    <Compile Include="VirturlOverwriteNew\ClassAA.cs" />
-    <Compile Include="VirturlOverwriteNew\UnitTest1.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Ovjust.DbXpoProvider\Ovjust.DbXpoProvider.csproj">
-      <Project>{398648c0-8656-4359-8c95-7c2b81ed5428}</Project>
-      <Name>Ovjust.DbXpoProvider</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
