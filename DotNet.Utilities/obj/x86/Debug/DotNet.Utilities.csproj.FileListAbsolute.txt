@@ -28,3 +28,15 @@ I:\my_program_middle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\Newtonsoft.Jso
 I:\my_program_middle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\OWC10Chart.dll
 I:\my_program_middle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\office.dll
 I:\my_program_middle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\DotNet_Utilities.dll
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\DotNet_Utilities.pdb
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\Excel.dll
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\ICSharpCode.SharpZipLib.dll
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\itextsharp.dll
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\Newtonsoft.Json.dll
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\OWC10Chart.dll
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\office.dll
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\obj\x86\Debug\DotNet.Utilities.csprojResolveAssemblyReference.cache
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\obj\x86\Debug\DotNet_Utilities.dll
+E:\MyProgramMiddle\Ovjust_Common\DotNet.Utilities\obj\x86\Debug\DotNet_Utilities.pdb
