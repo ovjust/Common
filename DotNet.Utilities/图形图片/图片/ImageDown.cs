@@ -68,7 +68,7 @@ namespace DotNet_Utilities
                     preStr = preStr.Replace("-", "");
                     preStr = preStr.Replace(":", "");
                     preStr = preStr.Replace(" ", "");
-                    WebClient wc = new WebClient();
+                    HttpProcWebClient wc = new HttpProcWebClient();
                     wc.DownloadFile(imgurlAry[i], path + "/" + preStr + imgurlAry[i].Substring(imgurlAry[i].LastIndexOf("/") + 1));
                 }
             }

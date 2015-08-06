@@ -67,7 +67,7 @@ namespace DotNet_Utilities
         }
     }
 
-    public class WebClient
+    public class HttpProcWebClient
     {
         Encoding encoding = Encoding.Default;
         string respHtml = "";
@@ -78,14 +78,14 @@ namespace DotNet_Utilities
         int bufferSize = 15240;
         public event EventHandler<UploadEventArgs> UploadProgressChanged;
         public event EventHandler<DownloadEventArgs> DownloadProgressChanged;
-        static WebClient()
+        static HttpProcWebClient()
         {
             LoadCookiesFromDisk();
         }
         /// <summary>    
         /// 创建WebClient的实例    
         /// </summary>    
-        public WebClient()
+        public HttpProcWebClient()
         {
             requestHeaders = new WebHeaderCollection();
             responseHeaders = new WebHeaderCollection();

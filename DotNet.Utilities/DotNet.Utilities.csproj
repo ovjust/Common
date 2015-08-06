@@ -60,6 +60,7 @@
     <Compile Include="文件相关\启动程序进程\ServiceInstall.cs" />
     <Compile Include="文件相关\配置文件操作类\CustomConfigHelper.cs" />
     <Compile Include="网络\Chart图形\Assistant.cs" />
+    <Compile Include="网络\WebReqestHelper.cs" />
     <Compile Include="语言字符时间计算\Chinese2Unicode.cs" />
     <Compile Include="语言字符时间计算\EnumHelper.cs" />
     <Compile Include="语言字符时间计算\字符串\StringExtensions.cs" />
@@ -177,7 +178,7 @@
     <Compile Include="文件相关\文件操作类\FileOperate.cs" />
     <Compile Include="验证加密\随机数类\BaseRandom.cs" />
     <Compile Include="验证加密\随机数类\RandomOperate.cs" />
-    <Compile Include="页面辅助类\HttpProc.cs" />
+    <Compile Include="网络\HttpProc.cs" />
     <Compile Include="文件相关\文件操作类\INIFile.cs" />
     <Compile Include="网络\邮件\MailSender.cs" />
     <Compile Include="语言字符时间计算\RMB.cs" />

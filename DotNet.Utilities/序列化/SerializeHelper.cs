@@ -44,14 +44,19 @@ namespace DotNet_Utilities
         /// </summary>
         /// <param name="type">对象类型</param>
         /// <param name="filename">文件路径</param>
-        public static object Load(Type type, string filename)
+        /// <summary>
+        /// 文件化XML反序列化
+        /// </summary>
+        /// <param name="type">对象类型</param>
+        /// <param name="filename">文件路径</param>
+        public static T Load<T>(string filename) where T : class
         {
             FileStream fs = null;
             try
             {
                 fs = new FileStream(filename, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-                XmlSerializer serializer = new XmlSerializer(type);
-                return serializer.Deserialize(fs);
+                XmlSerializer serializer = new XmlSerializer(typeof(T));
+                return serializer.Deserialize(fs) as T;
             }
             catch (Exception ex)
             {
