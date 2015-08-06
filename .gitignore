@@ -157,3 +157,4 @@ DotNet.Utilities/bin/x86/Debug/DotNet_Utilities.dll
 DotNet.Utilities/bin/x86/Debug/DotNet_Utilities.dll
 *.pdb
 DotNet.Utilities/obj/x86/Debug/DotNet.Utilities.csproj.FileListAbsolute.txt
+DotNet.Utilities/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
