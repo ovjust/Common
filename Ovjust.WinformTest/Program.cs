@@ -15,7 +15,7 @@ namespace Ovjust.WinformTest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1DgvCustomRow());
+            Application.Run(new FormSourceGrid());
         }
     }
 }

@@ -50,6 +50,26 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\vcd\dev\devDemo_dll\DevDll14.1.4\Framework\DevExpress.Data.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\vcd\dev\devDemo_dll\DevDll14.1.4\Framework\DevExpress.Utils.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\vcd\dev\devDemo_dll\DevDll14.1.4\Framework\DevExpress.Xpo.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\vcd\dev\devDemo_dll\DevDll14.1.4\Framework\DevExpress.XtraEditors.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\vcd\dev\devDemo_dll\DevDll14.1.4\Framework\DevExpress.XtraGrid.v14.1.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -62,17 +82,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormXpoGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXpoGrid.Designer.cs">
+      <DependentUpon>FormXpoGrid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1DgvCustomRow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1DgvCustomRow.Designer.cs">
       <DependentUpon>Form1DgvCustomRow.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSourceGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSourceGrid.Designer.cs">
+      <DependentUpon>FormSourceGrid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XPClass1.cs" />
+    <EmbeddedResource Include="FormXpoGrid.resx">
+      <DependentUpon>FormXpoGrid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1DgvCustomRow.resx">
       <DependentUpon>Form1DgvCustomRow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSourceGrid.resx">
+      <DependentUpon>FormSourceGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -91,6 +131,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ovjust.DbXpoProvider14\Ovjust.DbXpoProvider14.csproj">
+      <Project>{36b7cada-2131-428f-9d21-c0701519933e}</Project>
+      <Name>Ovjust.DbXpoProvider14</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ovjust.DevBasic\Ovjust.DevBasic.csproj">
+      <Project>{ec627b31-357e-4976-bdf1-9e7f0d5bdf35}</Project>
+      <Name>Ovjust.DevBasic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
