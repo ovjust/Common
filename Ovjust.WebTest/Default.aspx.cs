@@ -19,9 +19,9 @@ namespace Ovjust.WebTest
 
             try
             {
-                SessionInit.Init();
-                QueryLog log = new QueryLog(SessionInit.Sess);
-                log.Save();
+                //SessionInit.Init();
+                //QueryLog log = new QueryLog(SessionInit.Sess);
+                //log.Save();
             }
             catch (Exception ex)
             {

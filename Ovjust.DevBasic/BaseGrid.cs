@@ -16,6 +16,7 @@ namespace Ovjust.DevBasic
 {
     public partial class BaseGrid : UserControl
     {
+        protected bool reload = true;
         protected BaseGrid()
         {
             InitializeComponent();
@@ -81,23 +82,28 @@ namespace Ovjust.DevBasic
                 OnRefresh(sender, e);
             CallFramework();
         }
-
+      
         /// <summary>
         /// 加载数据
         /// </summary>
-        public virtual void CallFramework()
+        public virtual void CallFramework(bool reload=true)
         {
+            this.reload = reload;
             barStaticLoading.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
             if (!bgwLoading.IsBusy)
                 bgwLoading.RunWorkerAsync();
         }
-
 
         private void CallFrameworkFinished()
         {
             barStaticLoading.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             CheckPageButtonEnable();
             barStaticPageInfo.Caption = string.Format("第{0}页/总{1}页 共{2}行", pageInfo.PageIndex, pageInfo.PageCount, pageInfo.TotalCount);
+            if (OnCallFrameworkFinished != null)
+            {
+                CallFrameworkFinishedArgs arg = new CallFrameworkFinishedArgs(gridView1);
+                OnCallFrameworkFinished(null, arg);
+            }
         }
 
         private void CheckPageButtonEnable()
@@ -167,6 +173,7 @@ namespace Ovjust.DevBasic
 
         void gridView1_EndSorting(object sender, EventArgs e)
         {
+            this.pageInfo.IsSorting = sortOuter;
             if (sortOuter)
             {
                 PageInfo.PageIndex = 1;
@@ -205,6 +212,16 @@ namespace Ovjust.DevBasic
                 //CheckPageButtonEnable();
             CallFramework();
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            if(OnGridDoubleClicked!=null)
+            {
+                var row=gridView1.GetFocusedRow();
+                GridSelectedRowArgs arg=new GridSelectedRowArgs(row);
+                OnGridDoubleClicked(sender, arg);
+            }
+        }
         
     }
 
@@ -229,11 +246,14 @@ namespace Ovjust.DevBasic
         }
        
         public bool IsAll { set; get; }
+
+        public bool IsSorting { set; get; }
     }
     public class CallFrameworkArgs : EventArgs
     {
         public PageInfo PageInfo { set; get; }
         public object DataSource { set; get; }
+        public bool Reload { set; get; }
         //public GridColumnSortInfoCollection SortInfo { set; get; }
     }
     public class CallFrameworkFinishedArgs : EventArgs

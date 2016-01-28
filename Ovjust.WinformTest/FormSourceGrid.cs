@@ -22,6 +22,12 @@ namespace Ovjust.WinformTest
         private void FormSourceGrid_Load(object sender, EventArgs e)
         {
             sourceGrid1.OnCallFramework += sourceGrid1_OnCallFramework;
+            sourceGrid1.OnGridDoubleClicked += sourceGrid1_OnGridDoubleClicked;
+        }
+
+        void sourceGrid1_OnGridDoubleClicked(object sender, DevBasic.GridSelectedRowArgs e)
+        {
+           
         }
 
         void sourceGrid1_OnCallFramework(object sender, DevBasic.CallFrameworkArgs e)

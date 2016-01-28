@@ -31,6 +31,12 @@ namespace Ovjust.WinformTest
             xpoGrid1.OnCallFramework += xpoGrid1_OnCallFramework;
             xpoGrid1.OnCallFrameworkFinished += xpoGrid1_OnCallFrameworkFinished;
             xpoGrid1.ExtendSorting.Add(new DevExpress.Xpo.SortProperty("Name", DevExpress.Xpo.DB.SortingDirection.Ascending));
+            xpoGrid1.OnGridDoubleClicked += xpoGrid1_OnGridDoubleClicked;
+        }
+
+        void xpoGrid1_OnGridDoubleClicked(object sender, DevBasic.GridSelectedRowArgs e)
+        {
+           
         }
 
         void xpoGrid1_OnCallFrameworkFinished(object sender, DevBasic.CallFrameworkFinishedArgs e)

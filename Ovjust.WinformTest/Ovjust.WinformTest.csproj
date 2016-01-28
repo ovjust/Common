@@ -54,6 +54,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\vcd\dev\devDemo_dll\DevDll14.1.4\Framework\DevExpress.Data.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\vcd\dev\devDemo_dll\DevDll14.1.4\Framework\DevExpress.Utils.v14.1.dll</HintPath>
@@ -70,6 +71,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\vcd\dev\devDemo_dll\DevDll14.1.4\Framework\DevExpress.XtraGrid.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -82,6 +86,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColorTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorTest.Designer.cs">
+      <DependentUpon>ColorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAPath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAPath.Designer.cs">
+      <DependentUpon>FormAPath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormButtonEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormButtonEdit.Designer.cs">
+      <DependentUpon>FormButtonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGridentColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGridentColor.Designer.cs">
+      <DependentUpon>FormGridentColor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormXpoGrid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,9 +128,54 @@
     <Compile Include="FormSourceGrid.Designer.cs">
       <DependentUpon>FormSourceGrid.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="MyDateNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupSelectedDatesInnerEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PopupSelectedDatesInnerEdit.Designer.cs">
+      <DependentUpon>PopupSelectedDatesInnerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeekSelectMulti2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeekSelectMulti2.Designer.cs">
+      <DependentUpon>WeekSelectMulti2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ColorTest.resx">
+      <DependentUpon>ColorTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAPath.resx">
+      <DependentUpon>FormAPath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupSelectedDatesInnerEdit.resx">
+      <DependentUpon>PopupSelectedDatesInnerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeekSelectMulti.resx">
+      <DependentUpon>WeekSelectMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeekSelectMulti2.resx">
+      <DependentUpon>WeekSelectMulti2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ProgramDelegateInvokeShowConsole.cs2" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeekSelectMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeekSelectMulti.Designer.cs">
+      <DependentUpon>WeekSelectMulti.cs</DependentUpon>
+    </Compile>
     <Compile Include="XPClass1.cs" />
+    <Compile Include="Program.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="FormButtonEdit.resx">
+      <DependentUpon>FormButtonEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGridentColor.resx">
+      <DependentUpon>FormGridentColor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormXpoGrid.resx">
       <DependentUpon>FormXpoGrid.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +194,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -133,6 +207,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{0a9704f9-7864-45af-bfa7-e09f2b30a29f}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ovjust.DbXpoProvider14\Ovjust.DbXpoProvider14.csproj">
       <Project>{36b7cada-2131-428f-9d21-c0701519933e}</Project>
       <Name>Ovjust.DbXpoProvider14</Name>
@@ -141,6 +219,9 @@
       <Project>{ec627b31-357e-4976-bdf1-9e7f0d5bdf35}</Project>
       <Name>Ovjust.DevBasic</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

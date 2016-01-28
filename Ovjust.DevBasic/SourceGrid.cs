@@ -21,13 +21,13 @@ namespace Ovjust.DevBasic
 
         public event EventHandler<CallFrameworkArgs> OnCallFramework;
 
-        public override void CallFramework()
+        public override void CallFramework(bool reload = true)
         {
             if (OnCallFramework == null)
             {
                 throw new Exception("OnCallFramework未实现。");
             }
-            base.CallFramework();
+            base.CallFramework(reload);
         }
         CallFrameworkArgs arg;
         protected override void bgwLoading_DoWork(object sender, DoWorkEventArgs e)
@@ -35,6 +35,7 @@ namespace Ovjust.DevBasic
             base.bgwLoading_DoWork(sender, e);
             arg = new CallFrameworkArgs();
             arg.PageInfo = PageInfo;
+            arg.Reload = reload;
             //arg.SortInfo = gridView1.SortInfo;
             OnCallFramework(null, arg);
 

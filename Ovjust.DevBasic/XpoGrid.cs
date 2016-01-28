@@ -41,7 +41,7 @@ namespace Ovjust.DevBasic
         public GroupOperator Criteria { get; set; }
         public GroupOperator ExtendCriteria = new GroupOperator();
 
-        public override void CallFramework()
+        public override void CallFramework(bool reload=true)
         {
             DataCollection = null;
             if (OnCallFramework != null)
@@ -50,7 +50,7 @@ namespace Ovjust.DevBasic
                 arg.PageInfo = PageInfo;
                 OnCallFramework(null, arg);
             }
-            base.CallFramework();
+            base.CallFramework(reload);
         }
 
         protected override void bgwLoading_DoWork(object sender, DoWorkEventArgs e)

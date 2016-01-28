@@ -53,6 +53,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsQuery">
+      <HintPath>..\packages\CsQuery.1.3.4\lib\net40\CsQuery.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v12.1">
       <HintPath>..\AFiles\dlls\DevExpress.Data.v12.1.dll</HintPath>
     </Reference>
@@ -62,9 +65,20 @@
     <Reference Include="DevExpress.Xpo.v12.1.Extensions">
       <HintPath>..\AFiles\dlls\DevExpress.Xpo.v12.1.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="HTMLparser">
+      <HintPath>..\packages\Majestic13.3.2.0\lib\Net4\HTMLparser.dll</HintPath>
+    </Reference>
+    <Reference Include="Majestic13">
+      <HintPath>..\packages\Majestic13.3.2.0\lib\Net4\Majestic13.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Winista.HtmlParser">
+      <HintPath>..\packages\Winista.HtmlParser.1.8.0\lib\Winista.HtmlParser.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>
@@ -81,13 +95,16 @@
   </Choose>
   <ItemGroup>
     <Compile Include="ArrayTest.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="SmsDataModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GuidTest.cs" />
     <Compile Include="SafeThreadTest.cs" />
+    <Compile Include="IntToBit.cs" />
+    <Compile Include="Xml\XmlLoadTest.cs" />
+    <Compile Include="WeekFormateTest.cs" />
     <Compile Include="XPO\Model.cs" />
     <Compile Include="XPO\XpoCollectTest.cs" />
-    <Compile Include="UnitTest2.cs" />
+    <Compile Include="DelegeteInvoke.cs" />
     <Compile Include="VirturlOverwriteNew\ClassA.cs" />
     <Compile Include="VirturlOverwriteNew\ClassAA.cs" />
     <Compile Include="VirturlOverwriteNew\UnitTest1.cs" />
@@ -100,6 +117,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

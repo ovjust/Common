@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body id="body">
+    <button id="btnClear" value="清空"></button>
+    <div id="divMain" style="width:95%;min-height:500px;border:1px solid red;">
+      <!--  <div> 
+        <input type='text' id='txt1' value='1' />
+        <input type='button' id='btn1' value='btn1' />
+            </div>-->
+    </div>
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script>
+        var paperData = {};
+        //$.get("WebService1.asmx/HelloWorld", function (data) {
+        //    var a = data;
+        //});
+        //$.post("WebService1.asmx/HelloWorld",null, function (data) {
+        //    var a = data;
+        //});
+        //$.post("WebService1.asmx/HelloWorld", null, function (data) {
+        //    var a = data;
+        //}, "text");
+        $.ajax({
+            type:"POST",
+            contentType:"application/json",
+            url:"WebService1.asmx/HelloWorld",             //这里跟上面的情况一样
+            data:null,
+            dataType:'json',
+        success:function(result)
+        {
+            var da = result.d;
+            for (var i in da.Datas) {
+                var model = da.Datas[i];
+                var parentCtr = $('#' + model.CtlId);
+                if (model.ChangeType == 'append') {
+                    $(model.Html).appendTo('#' + model.CtlId);
+                }
+                $('#body').append(model.Script);//document
+
+            }
+            //alert(result.d);
+        }
+        });
+
+    </script>
+    <script>
+        //$('#txt1').val(110);
+    </script>
+</body>
+</html>

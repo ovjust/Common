@@ -15,7 +15,7 @@ namespace Ovjust.WinformTest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSourceGrid());
+            Application.Run(new FormAPath());//WeekSelectMulti2  ColorTest
         }
     }
 }

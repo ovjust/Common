@@ -72,6 +72,10 @@
   <ItemGroup>
     <Content Include="AddFile1.aspx" />
     <Content Include="Default.aspx" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="FreePages\HtmlPage1.html" />
+    <Content Include="FreePages\WebService1.asmx" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -90,6 +94,10 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FreePages\WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="ModelXpo\QueryLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,6 +118,7 @@
       <Name>Ovjust.DbXpoProvider</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -10,13 +10,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DotNet_Utilities</RootNamespace>
     <AssemblyName>DotNet_Utilities</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,23 +55,27 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="反射\EventClass.cs" />
     <Compile Include="图形图片\ImageIO.cs" />
     <Compile Include="图形图片\图片\ImageToString.cs" />
     <Compile Include="序列化\Json\NewtonJson.cs" />
+    <Compile Include="文件相关\启动程序进程\ProcessStart.cs" />
     <Compile Include="文件相关\启动程序进程\ServiceInstall.cs" />
     <Compile Include="文件相关\配置文件操作类\CustomConfigHelper.cs" />
     <Compile Include="网络\Chart图形\Assistant.cs" />
     <Compile Include="网络\WebReqestHelper.cs" />
     <Compile Include="语言字符时间计算\Chinese2Unicode.cs" />
     <Compile Include="语言字符时间计算\EnumHelper.cs" />
+    <Compile Include="图形图片\GradientColorHelper.cs" />
+    <Compile Include="语言字符时间计算\Reverser.cs" />
     <Compile Include="语言字符时间计算\字符串\StringExtensions.cs" />
     <Compile Include="页面辅助类\BindDataControl.cs" />
     <Compile Include="网络\Chart图形\OWCChart11.cs" />
     <Compile Include="语言字符时间计算\ConvertHelper.cs" />
-    <Compile Include="页面辅助类\Cookie&amp;Session&amp;Cache\CacheHelper.cs" />
-    <Compile Include="页面辅助类\Cookie&amp;Session&amp;Cache\CookieHelper.cs" />
-    <Compile Include="页面辅助类\Cookie&amp;Session&amp;Cache\SessionHelper.cs" />
-    <Compile Include="页面辅助类\Cookie&amp;Session&amp;Cache\SessionHelper2.cs" />
+    <Compile Include="页面辅助类\CookieSessionCache\CacheHelper.cs" />
+    <Compile Include="页面辅助类\CookieSessionCache\CookieHelper.cs" />
+    <Compile Include="页面辅助类\CookieSessionCache\SessionHelper.cs" />
+    <Compile Include="页面辅助类\CookieSessionCache\SessionHelper2.cs" />
     <Compile Include="文件相关\CSV文件转换\CsvHelper.cs" />
     <Compile Include="验证加密\DEncrypt\MySecurity.cs" />
     <Compile Include="DLL\DllReflect.cs" />
@@ -168,7 +173,7 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="文件相关\配置文件操作类\ConfigHelper.cs" />
-    <Compile Include="页面辅助类\Cookie&amp;Session&amp;Cache\DataCache.cs" />
+    <Compile Include="页面辅助类\CookieSessionCache\DataCache.cs" />
     <Compile Include="文件相关\导出Excel\DataToExcel.cs" />
     <Compile Include="验证加密\DEncrypt\DEncrypt.cs" />
     <Compile Include="验证加密\DEncrypt\DESEncrypt.cs" />
