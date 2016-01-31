@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <button onclick="post1();">无参Post</button>
+    <button onclick="post2();">有参Post</button>
+    <button onclick="get1();">无参Get</button>
+    <button onclick="get2();">有参Get</button>
+    <script>
+        function post1() {
+            $.ajax({
+                url: "http://110xx.top/WebServiceAjax.asmx/Post1",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: null,//"{}"    ""   null 均可 
+                success: function (json) {
+                    alert(json.d);
+                },
+                error: function (x, e) {
+                    alert(x.responseText);
+                },
+                complete: function (x) {
+                    alert(x.responseText);
+                }
+            });
+        }
+
+        function post2() {
+            $.ajax({
+                url: "http://110xx.top/WebServiceAjax.asmx/Post2",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({ s: 'POST有参数' }),//"{s:'POST有参数'}"  JSON.stringify( {s:'POST有参数'})  均可 
+                success: function (json) {
+                    alert(json.d);
+                },
+                error: function (x, e) {
+                    alert(x.responseText);
+                },
+                complete: function (x) {
+                    alert(x.responseText);
+                }
+            });
+        }
+
+
+        function get1() {
+            $.ajax({
+                url: "http://110xx.top/WebServiceAjax.asmx/Get1",
+                type: "Get",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: null,//"{}"    ""   null 均可 
+                success: function (json) {
+                    alert(json.d);
+                },
+                error: function (x, e) {
+                    alert(x.responseText);
+                },
+                complete: function (x) {
+                    alert(x.responseText);
+                }
+            });
+        }
+
+        //不好用
+        function get2b() {
+            $.ajax({
+                url: "http://110xx.top/WebServiceAjax.asmx/Get2",
+                type: "Get",
+                dataType: "json",
+                //contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({ s: 'POST有参数' }),//"{s:'POST有参数'}"  JSON.stringify( {s:'POST有参数'})  均可 
+                beforeSend: function (x) {
+                    x.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+                },
+                success: function (json) {
+                    alert(json.d);
+                },
+                error: function (x, e) {
+                    alert(x.responseText);
+                },
+                complete: function (x) {
+                    alert(x.responseText);
+                }
+            });
+        }
+
+        //可用
+        function get2() {
+            $.ajax({
+                url: "http://110xx.top/WebServiceAjax.asmx/Get2",
+                type: "Get",
+                dataType: "json",
+                //contentType: "application/json; charset=utf-8",
+                data: encodeURI("s='GET有参数'"),//
+                beforeSend: function (x) {
+                    x.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+                },
+                success: function (json) {
+                    alert(json.d);
+                },
+                error: function (x, e) {
+                    alert(x.responseText);
+                },
+                //complete: function (x) {
+                //    alert(x.responseText);
+                //}
+            });
+        }
+
+        //不行
+        function get2c() {
+            $.ajax({
+                url: "WebServiceAjax.asmx/Get2?s=GETa",
+                type: "Get",
+                dataType: "json",
+                //data: encodeURI("s='GET有参数'"),
+                beforeSend: function (x) {
+                    x.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+                },
+                success: function (json) {
+                    alert(json.d);
+                },
+                error: function (x, e) {
+                    alert(x.responseText);
+                },
+                complete: function (x) {
+                    alert(x.responseText);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

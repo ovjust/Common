@@ -71,7 +71,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddFile1.aspx" />
-    <Content Include="Default.aspx" />
+    <Content Include="Default1.aspx" />
+    <Content Include="WebServiceAjax.asmx" />
+    <Content Include="WebServiceAjax.html" />
+    <Content Include="WebServiceAjax2.html" />
+    <None Include="Properties\PublishProfiles\new1.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="FreePages\HtmlPage1.html" />
     <Content Include="FreePages\WebService1.asmx" />
@@ -88,12 +92,12 @@
     <Compile Include="AddFile1.aspx.designer.cs">
       <DependentUpon>AddFile1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Default1.aspx.cs">
+      <DependentUpon>Default1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Default1.aspx.designer.cs">
+      <DependentUpon>Default1.aspx</DependentUpon>
     </Compile>
     <Compile Include="FreePages\WebService1.asmx.cs">
       <DependentUpon>WebService1.asmx</DependentUpon>
@@ -101,6 +105,10 @@
     </Compile>
     <Compile Include="ModelXpo\QueryLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebServiceAjax.asmx.cs">
+      <DependentUpon>WebServiceAjax.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\j2c.pubxml" />

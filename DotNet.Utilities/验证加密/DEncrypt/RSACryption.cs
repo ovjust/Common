@@ -26,7 +26,7 @@ namespace DotNet_Utilities
 		{ 			
 				System.Security.Cryptography.RSACryptoServiceProvider rsa=new RSACryptoServiceProvider(); 
 				xmlKeys=rsa.ToXmlString(true); 
-				xmlPublicKey = rsa.ToXmlString(false); 			
+				xmlPublicKey = rsa.ToXmlString(false);
 		} 
 		#endregion 
 
